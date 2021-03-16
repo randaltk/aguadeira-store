@@ -5,6 +5,7 @@
   align-items: center;
   padding: 1.5rem 1rem;
   z-index: 50;
+  margin-left: 2rem;
   
 }
 
@@ -13,7 +14,7 @@
   list-style: none;
   align-items: center;
   margin: 0 auto;
- 
+
 }
 
 

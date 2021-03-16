@@ -12,12 +12,7 @@ body {
  border: 2rem solid transparent;
 }
 
-@media (max-width: 500px) {
 
- body {
-  border: 1rem solid transparent;
- }
-}
 
 
 @font-face {
@@ -31,3 +26,11 @@ img {
   width: 100%;
   object-fit: contain;
 }
+
+
+@media (max-width: 500px) {
+
+  body {
+   border: 1rem solid transparent;
+  }
+ }
