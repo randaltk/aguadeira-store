@@ -6,10 +6,8 @@ const Product = ({ imageUrl, description, price, name, productId }) => {
     <>
       <div className="product">
         <img src={imageUrl} alt={name} />
-
-        <div class="overlay"></div>
         <Link to={`/product/${productId}`} className="info__button">
-          Visualizar
+          View
         </Link>
 
         <div className="product__info">
