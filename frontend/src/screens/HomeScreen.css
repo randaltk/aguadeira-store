@@ -6,14 +6,18 @@ margin: 0 auto;
 .homescreen__title {
   font-size: 2.5rem;
   color: #2D190D;
-  margin-bottom: 1rem;
-  margin-left: 8px;
+  margin: 4rem 0 4rem 0;
+
   text-align: center;
 }
 
 .homescreen__products {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+
+  width:950px;
+  height:800px;
 }
 
 @media (max-width: 1232px) {
