@@ -15,7 +15,9 @@ export default class ContactScreen extends React.Component {
     return (
       <>
         <div className="contact__wrapper">
-          <h1 className="contact__h1">Fale com a gente</h1>
+          <h1 className="contact__h1">
+            Estou a disposição para mais informações
+          </h1>
 
           <div className="contact__grid">
             <div className="contact__descs">
@@ -38,7 +40,7 @@ export default class ContactScreen extends React.Component {
               action="https://formspree.io/f/mqkgrvbj"
               method="POST"
             >
-              <div style={{ display: "flex" }}>
+              <div className="wrapper__flex">
                 <label>Nome</label>
 
                 <span>*</span>
