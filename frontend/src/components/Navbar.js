@@ -19,19 +19,19 @@ const Navbar = ({ click }) => {
             <li>
               <Link to="/">Loja</Link>
             </li>
-            <li> | </li>
+            <li> ✧ </li>
             <li>
               <Link to="/about">Sobre</Link>
             </li>
-            <li> | </li>
+            <li> ✧ </li>
             <li>
               <Link to="/blog">Blog</Link>
             </li>
-            <li> | </li>
+            <li> ✧ </li>
             <li>
               <Link to="/contact">Contato</Link>
             </li>
-            <li> | </li>
+            <li> ✧ </li>
             <li>
               <Link to="/cart" className="cart__link">
                 <i className="fas fa-shopping-cart"></i>
