@@ -5,12 +5,12 @@ const Product = ({ imageUrl, description, price, name, productId }) => {
   return (
     <>
       <div className="product">
-        <img src={imageUrl} alt={name} />
-
+        <div className="img__wrapper">
+          <img src={imageUrl} alt={name} />
+        </div>
         <Link to={`/product/${productId}`} className="info__button">
           Visualizar
         </Link>
-
         <div className="product__info">
           <p className="info__name">{name}</p>
 

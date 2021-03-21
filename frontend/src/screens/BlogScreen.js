@@ -103,7 +103,7 @@ const BlogScreen = () => {
 
           <img className="img__insta" src={instaPost2} alt="instaPost2" />
 
-          <img className="img__insta" src={instaPost1} alt="post1" />
+          <img className="img__insta" src={instaPost1} alt="instaPost3" />
         </div>
       </div>
 

@@ -30,6 +30,12 @@
 
 .img__insta {
   height: 300px;
+  cursor: pointer;
+}
+
+.img__insta:hover {
+  filter: brightness(70%);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 #insta__h1 {
