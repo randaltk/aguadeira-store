@@ -4,8 +4,9 @@ import Footer from "../components/Footer";
 import CestaSabonetes from "../assets/images/cesta-sabonetes.jpg";
 import Laranjas from "../assets/images/oranges.jpg";
 
-
 import instaPost1 from "../assets/images/AguadeiraLogo.png";
+import instaPost2 from "../assets/images/sabonete-solar.jpg";
+import instaPost3 from "../assets/images/sabonete-lavanda.jpg";
 const BlogScreen = () => {
   return (
     <>
@@ -97,26 +98,13 @@ const BlogScreen = () => {
           @aguadeira.atelier
         </h1>
 
-          <div className="instagram__wrapper">
-          <img
-            className="img__post1"
-            src={CestaSabonetes}
-            alt="cesta-sabonetes"
-          />
+        <div className="instagram__wrapper">
+          <img className="img__insta" src={instaPost3} alt="instaPost3" />
 
-          <img
-            className="img__post1"
-            src={CestaSabonetes}
-            alt="cesta-sabonetes"
-          />
+          <img className="img__insta" src={instaPost2} alt="instaPost2" />
 
-          <img
-            className="img__post1"
-            src={CestaSabonetes}
-            alt="cesta-sabonetes"
-          />
+          <img className="img__insta" src={instaPost1} alt="post1" />
         </div>
-        
       </div>
 
       <Footer />
