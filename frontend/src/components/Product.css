@@ -1,17 +1,9 @@
 .product {
   width: 300px;
-  
   position: relative;
   overflow: hidden;
-  
-  /* background: #fff; */
   cursor: pointer;
-  /* 
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4); */
-  margin: 8px auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+  
 
 
 }
@@ -24,12 +16,10 @@
 }
 .product > img {
   transition: transform .5s;
-
   width: 100%;
   height: 85%;
- 
   object-fit: cover;
-  border-radius: 8px;
+  
 
 }
 

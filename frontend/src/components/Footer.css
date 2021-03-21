@@ -1,83 +1,65 @@
-.footer__wrapper{
-    margin-top: 2rem;
-    display: flex;
-   
-    justify-content: center;
-  
+.footer__wrapper {
+  display: flex;
+
+  justify-content: center;
 }
 
 .footer__desc {
-    /* color:#9b946c; */
-    color: #553521;
-    font-size:0.9rem;
-    opacity: 0.7;
+  /* color:#9b946c; */
+  color: #553521;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
 
-.footer__desc:hover{
-    transition: 0.8s ease-out;
-    color:hsla(23, 44%, 23%, 0.824);
-    
+.footer__desc:hover {
+  transition: 0.8s ease-out;
+  color: hsla(23, 44%, 23%, 0.824);
 }
-.footer__desc2:hover{
-    transition: 0.8s ease-out;
-    color:hsla(23, 44%, 23%, 0.824);    
+.footer__desc2:hover {
+  transition: 0.8s ease-out;
+  color: hsla(23, 44%, 23%, 0.824);
 }
-.footer__desc3:hover{
-    transition: 0.8s ease-out;
-    color:hsla(23, 44%, 23%, 0.824);
-    
+.footer__desc3:hover {
+  transition: 0.8s ease-out;
+  color: hsla(23, 44%, 23%, 0.824);
 }
 
+.footer__wrapper2 {
+  margin-top: 0.1rem;
+  display: flex;
 
-
-
-.footer__wrapper2{
-margin-top: 0.1rem;
-    display: flex;
-
-    justify-content: center;
-
+  justify-content: center;
 }
 
 .footer__desc2 {
-    /* color:#9b946c; */
-    color: #553521;
-    font-size:0.9rem;
-    opacity: 0.7;
-    text-align: center;
+  /* color:#9b946c; */
+  color: #553521;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  text-align: center;
 }
 
+.footer__wrapper3 {
+  margin-top: 0.1rem;
+  display: flex;
 
-.footer__wrapper3{
-    margin-top: 0.1rem;
-        display: flex;
-      
-        justify-content: center;
-    
-    }
-    
-    .footer__desc3 {
-      
-        color: #553521;
-        font-size:0.9rem;
-        opacity: 0.7;
-    }
+  justify-content: center;
+}
 
+.footer__desc3 {
+  color: #553521;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
 
-  
-.footer__wrapper-i{
-    margin-top: 3rem;
-    display: flex;
-    
-    justify-content: center;
-       
-    
-    }
+.footer__wrapper-i {
+  margin-top: 3rem;
+  display: flex;
 
-   i {
-       padding: 0.5rem;
-       cursor: pointer;
-   }
+  justify-content: center;
+}
 
-
-  
+i {
+  padding: 0.5rem;
+  cursor: pointer;
+}

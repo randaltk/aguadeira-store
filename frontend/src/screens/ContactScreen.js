@@ -74,7 +74,6 @@ export default class ContactScreen extends React.Component {
             </form>
           </div>
         </div>
-
         <Footer />
       </>
     );
