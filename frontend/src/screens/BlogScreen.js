@@ -50,7 +50,11 @@ const BlogScreen = () => {
   return (
     <>
       <div className="blog__wrapper">
-        <h1 className="blog__h1"> Por que optar por sabonetes naturais ?</h1>
+        <h1 className="blog__h1"> Bem vindes ao nosso blog ! 🌸</h1>
+        <h1 className="blog__h1" id="h1post1">
+          {" "}
+          Por que optar por sabonetes naturais ?
+        </h1>
 
         <div className="blog__post1">
           <img
