@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "./BlogScreen.css";
 import Footer from "../components/Footer";
 
@@ -8,6 +10,43 @@ import instaPost1 from "../assets/images/AguadeiraLogo.png";
 import instaPost2 from "../assets/images/sabonete-solar.jpg";
 import instaPost3 from "../assets/images/sabonete-lavanda.jpg";
 const BlogScreen = () => {
+  const [readMore, setReadMore] = useState(false);
+
+  const extraContent1 = (
+    <p className="p__post1">
+      de outros cosméticos condicionantes, além da maioria dos sabonetes
+      industriais possuir ingredientes de origem animal. O pH dos sabonetes da
+      Terra Céu Azul é balanceado, entre 8 e 9, produzidos com matérias primas
+      100% de origem vegetal e aproveitando totalmente a glicerina natural do
+      processo de saponificação, que auxilia na umectação da pele, em conjunto
+      com óleos e manteigas vegetais, proporcionando limpeza suave e hidratação
+      para a pele. Os sabonetes são totalmente naturais, livres de parabenos,
+      lauril, petrolados, aditivos de origem animal e perfumes sintéticos. Os
+      sabonetes da Terra Céu Azul são naturais, veganos, artesanais, livre de
+      crueldade, terapêuticos, perfumados naturalmente & biodegradáveis.
+    </p>
+  );
+
+  const extraContent2 = (
+    <p className="p__post1">
+      Uma vez captado pelo olfato, o aroma viaja até o cérebro (mais rápido do
+      que os estímulos da visão ou da audição). O olfato nos conecta diretamente
+      a estados emocionais e comportamentais, muitas vezes armazenados desde a
+      infância. É o único dos cinco sentidos físicos que conecta-se diretamente
+      ao sistema límbico, muitas vezes referido como nosso centro de controle
+      emocional – é através desse sistema cerebral que emoções como ansiedade,
+      depressão, medo, raiva e alegria se manifestam fisicamente. . Além das
+      emoções, o sistema límbico esta conectado a outras partes do cérebro que
+      controlam atividades tais como, pressão arterial, batimentos cardíacos,
+      respiração, memória, os níveis de estresse e o equilíbrio hormonal. . É
+      importante lembrar que os Óleos Essenciais são luz solar transformada em
+      energia bio-disponível. Sendo assim, por trazerem luz à nossa vida
+      (através das incríveis e delicadas moléculas aromáticas) esses Óleos são
+      nossos aliados de cura bio-espiritual. É o milagre da Luz Perfumada. .
+      ✨🌸 Os óleos essenciais são vivos e dinâmicos: ao invés de substâncias
+      inertes, eles contêm a força de vida ativa da planta. 🌸✨.
+    </p>
+  );
   return (
     <>
       <div className="blog__wrapper">
@@ -35,26 +74,32 @@ const BlogScreen = () => {
             comuns estão o lauril éter sulfato de sódio e o propilenoglicol,
             ditos prejudiciais para a pele dentro da linha de produtos naturais,
             são usados para proporcionar mais espuma, transparência, entre
-            outras coisas. Estes sabonetes industriais também excluem a
-            glicerina de sua composição como sobra do processo de saponificação
-            e vendem para a fabricação de outros cosméticos condicionantes, além
-            da maioria dos sabonetes industriais possuir ingredientes de origem
-            animal. O pH dos sabonetes da Terra Céu Azul é balanceado, entre 8 e
-            9, produzidos com matérias primas 100% de origem vegetal e
-            aproveitando totalmente a glicerina natural do processo de
-            saponificação, que auxilia na umectação da pele, em conjunto com
-            óleos e manteigas vegetais, proporcionando limpeza suave e
-            hidratação para a pele. Os sabonetes são totalmente naturais, livres
-            de parabenos, lauril, petrolados, aditivos de origem animal e
-            perfumes sintéticos. Os sabonetes da Terra Céu Azul são naturais,
-            veganos, artesanais, livre de crueldade, terapêuticos, perfumados
-            naturalmente & biodegradáveis.
+            outras coisas.Estes sabonetes industriais também excluem a glicerina
+            de sua composição como sobra do processo de saponificação e vendem
+            para a fabricação{readMore ? "" : "..."}
+            <p
+              className="p__post1"
+              onClick={() => {
+                setReadMore(!readMore);
+              }}
+            >
+              {" "}
+              <p
+                style={{ color: "#553521", opacity: "0.9", cursor: "pointer" }}
+              >
+                {" "}
+                {readMore ? "⤴" : "Leia mais"}
+              </p>
+            </p>
           </p>
+        </div>
+        <div className="readMoreGrid">
+          <p className="p__post1">{readMore && extraContent1}</p>
         </div>
         <h1 className="blog__h1" id="h1__post2">
           Os óleos essenciais e as emoções
         </h1>
-        <div className="blog__post1">
+        <div className="blog__post1" id="post2">
           <p className="p__post1">
             Os aromas têm um potencial de impacto emocional que pode alcançar
             nossa psique, relaxando a mente e tocando o espírito. Os Óleos
@@ -71,28 +116,27 @@ const BlogScreen = () => {
             dependiam disso, e o que eles cheiravam causavam sentimentos
             proporcionais de medo, de fome e atração sexual. . . 👃🏼 Estima-se
             que nosso olfato seja até dez mil vezes mais preciso do que os
-            demais sentidos. Uma vez captado pelo olfato, o aroma viaja até o
-            cérebro (mais rápido do que os estímulos da visão ou da audição). O
-            olfato nos conecta diretamente a estados emocionais e
-            comportamentais, muitas vezes armazenados desde a infância. É o
-            único dos cinco sentidos físicos que conecta-se diretamente ao
-            sistema límbico, muitas vezes referido como nosso centro de controle
-            emocional – é através desse sistema cerebral que emoções como
-            ansiedade, depressão, medo, raiva e alegria se manifestam
-            fisicamente. . Além das emoções, o sistema límbico esta conectado a
-            outras partes do cérebro que controlam atividades tais como, pressão
-            arterial, batimentos cardíacos, respiração, memória, os níveis de
-            estresse e o equilíbrio hormonal. . É importante lembrar que os
-            Óleos Essenciais são luz solar transformada em energia
-            bio-disponível. Sendo assim, por trazerem luz à nossa vida (através
-            das incríveis e delicadas moléculas aromáticas) esses Óleos são
-            nossos aliados de cura bio-espiritual. É o milagre da Luz Perfumada.
-            . ✨🌸 Os óleos essenciais são vivos e dinâmicos: ao invés de
-            substâncias inertes, eles contêm a força de vida ativa da planta.
-            🌸✨
+            demais sentidos{readMore ? "" : "..."}
+            <p
+              className="p__post1"
+              onClick={() => {
+                setReadMore(!readMore);
+              }}
+            >
+              {" "}
+              <p
+                style={{ color: "#553521", opacity: "0.9", cursor: "pointer" }}
+              >
+                {" "}
+                {readMore ? "⤴" : "Leia mais"}
+              </p>
+            </p>
           </p>
 
           <img className="img__post1" src={Laranjas} alt="cesta-sabonetes" />
+        </div>
+        <div className="readMoreGrid" id="readMore2">
+          <p className="p__post1">{readMore && extraContent2}</p>
         </div>
         <h1 className="blog__h1" id="insta__h1">
           @aguadeira.atelier
