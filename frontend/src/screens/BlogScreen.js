@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./BlogScreen.css";
 import Footer from "../components/Footer";
 
-import CestaSabonetes from "../assets/images/cesta-sabonetes.jpg";
+import CestaSabonetes from "../assets/images/teste.jpg";
 import Laranjas from "../assets/images/oranges.jpg";
 
 import instaPost1 from "../assets/images/AguadeiraLogo.png";
@@ -50,11 +50,7 @@ const BlogScreen = () => {
   return (
     <>
       <div className="blog__wrapper">
-        <h1 className="blog__h1"> Bem vindes ao nosso blog ! 🌸</h1>
-        <h1 className="blog__h1" id="h1post1">
-          {" "}
-          Por que optar por sabonetes naturais ?
-        </h1>
+        <h1 className="blog__h1"> Bem vindes ao blog ! </h1>
 
         <div className="blog__post1">
           <img
@@ -64,6 +60,10 @@ const BlogScreen = () => {
           />
 
           <p className="p__post1">
+            <h3 className="blog__h2">
+              {" "}
+              Por que optar por sabonetes naturais ?
+            </h3>
             Todo sabão é feito da mistura de ácidos graxos (gorduras) e álcali
             (soda cáustica, potassa, ou cinzas), resultando em sais e glicerina.
             Um sabão artesanal em barra bem feito, de fórmula equilibrada, bons

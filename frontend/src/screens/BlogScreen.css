@@ -4,7 +4,10 @@
 }
 .blog__h1 {
   color: #2d190d;
-  text-align: center;
+}
+
+.blog__h2 {
+  margin-bottom: 0.5rem;
 }
 
 #h1post1 {
@@ -16,17 +19,18 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
   width: 950px;
-  height: 480px;
+  height: 530px;
   margin-top: 2rem;
 }
 
 .img__post1 {
   width: 500px;
-  height: 400px;
+  height: 450px;
   object-fit: cover;
 }
 
 .p__post1 {
+  margin-bottom: 1rem;
   line-height: 1.35rem;
 }
 
