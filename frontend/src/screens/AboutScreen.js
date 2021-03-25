@@ -1,6 +1,8 @@
-import "./AboutScreen.css";
-import Maozinha from "../assets/images/About/maozinha.png";
+
+
 import Matinho from "../assets/images/About/matinho.png";
+import Maozinha from "../assets/images/About/maozinha.png";
+
 // import Mandala from "../assets/images/About/mandala.PNG";
 // import Coelho from "../assets/images/About/coelin.PNG";
 // import Folhas from "../assets/images/About/folhas.PNG";
