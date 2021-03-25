@@ -1,0 +1,79 @@
+.about__wrapper {
+  margin: 0 auto;
+}
+.about__h1 {
+  color: #2d190d;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+
+.about__dots {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 4rem;
+  text-align: center;
+}
+
+.matinho__wrapper {
+  display: flex;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+.matinho__h1 {
+  margin-top: 5rem;
+  margin-left: 10rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+.matinho__img {
+  margin-bottom: 5rem;
+  width: 11%;
+}
+
+.matinho__desc {
+  line-height: 1.5rem;
+  word-spacing: 0.2rem;
+  padding: 1.5rem;
+  width: 55%;
+  opacity: 0.99;
+  font-style: italic;
+}
+
+.maozinha__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.maozinha__h1 {
+  margin-top: 5rem;
+  margin-left: 47rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+.maozinha__img {
+  width: 16%;
+  margin-right: 1rem;
+}
+
+.maozinha__desc {
+  line-height: 1.5rem;
+  word-spacing: 0.2rem;
+  padding: 1.5rem;
+  width: 55%;
+  opacity: 0.99;
+  font-style: italic;
+}
+
+/* .grid__container {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__img {
+  width: 70%;
+}
+
+.grid__desc {
+  margin-right: 10rem;
+  width: 40%;
+} */
