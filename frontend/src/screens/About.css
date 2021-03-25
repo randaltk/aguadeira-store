@@ -1,0 +1,22 @@
+.about__wrapper {
+  margin: 0 auto;
+}
+.about__h1 {
+  color: #2d190d;
+  text-align: center;
+}
+
+.grid__container {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__img {
+  width: 50%;
+}
+
+.grid__desc {
+  margin-right: 10rem;
+  width: 100%;
+}
