@@ -23,7 +23,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="footer__wrapper">
+      {/* <div className="footer__wrapper">
         <p className="footer__desc">
           Aguadeira Atelier© Todos os Direitos Reservados.
         </p>
@@ -38,6 +38,7 @@ const Footer = () => {
       <div className="footer__wrapper3">
         <p className="footer__desc3">aguadeira.atelier@gmail.com</p>
       </div>
+      */}
     </>
   );
 };

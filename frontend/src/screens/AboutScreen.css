@@ -3,12 +3,14 @@
 }
 .about__h1 {
   color: #2d190d;
-  letter-spacing: 1rem;
+  letter-spacing: 1.2rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .about__dots {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
   font-size: 1.5rem;
   letter-spacing: 4rem;
   text-align: center;
@@ -17,7 +19,6 @@
 .matinho__wrapper {
   display: flex;
   margin-left: 1rem;
-  margin-bottom: 5rem;
 }
 .matinho__h1 {
   margin-top: 5rem;
@@ -44,7 +45,6 @@
   justify-content: flex-end;
 }
 .maozinha__h1 {
-  margin-top: 5rem;
   margin-left: 47rem;
   letter-spacing: 1rem;
   text-transform: uppercase;

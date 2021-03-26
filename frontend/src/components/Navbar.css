@@ -20,9 +20,11 @@
 }
 
 .navbar__links > li > a {
+  text-transform: uppercase;
+  font-style: italic;
   text-decoration: none;
   color: #2d190d;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
 }

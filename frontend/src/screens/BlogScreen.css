@@ -1,12 +1,13 @@
 .blog__wrapper {
   margin: 0 auto;
-  text-align: center;
 }
 .blog__h1 {
+  text-align: center;
   color: #2d190d;
 }
 
 .blog__h2 {
+  text-align: center;
   margin-bottom: 0.5rem;
 }
 
@@ -24,14 +25,14 @@
 }
 
 .img__post1 {
-  width: 500px;
+  width: 450px;
   height: 450px;
   object-fit: cover;
 }
 
 .p__post1 {
   margin-bottom: 1rem;
-  line-height: 1.35rem;
+  line-height: 1.55rem;
 }
 
 #h1__post2 {

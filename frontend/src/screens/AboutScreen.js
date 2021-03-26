@@ -1,7 +1,7 @@
-// import "./AboutScreen.css";
-// import Matinho from "../assets/images/about/matinho.png";
-// import Maozinha from "../assets/images/about/maozinha.png";
-
+import Footer2 from "../components/Footer2";
+import Maozinha from "../assets/images/maozinha.png";
+import Matinho from "../assets/images/matinho.png";
+import "./AboutScreen.css";
 // import Mandala from "../assets/images/About/mandala.PNG";
 // import Coelho from "../assets/images/About/coelin.PNG";
 // import Folhas from "../assets/images/About/folhas.PNG";
@@ -9,8 +9,7 @@
 const AboutScreen = () => {
   return (
     <>
-      teste
-      {/*  <div className="about__wrapper">
+      <div className="about__wrapper">
         <h1 className="about__h1">Sobre a Marca</h1>
         <p className="about__dots">••••••••</p>
         <h1 className="matinho__h1">Natural</h1>
@@ -48,8 +47,7 @@ const AboutScreen = () => {
           <img className="maozinha__img" alt="maozinha" src={Maozinha}></img>
         </div>
       </div>
-
-  */}
+      <Footer2 />
     </>
   );
 };

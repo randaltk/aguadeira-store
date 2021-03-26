@@ -1,0 +1,40 @@
+.footer__wrapper {
+  margin: 10rem auto;
+
+  width: 80%;
+}
+.footer__nav {
+  display: flex;
+}
+
+.line {
+  border-top: 2px solid #2d190d;
+  width: 153, 75%;
+  margin-bottom: 1rem;
+}
+.footer__ul {
+  flex-direction: column;
+  padding: 3rem;
+
+  list-style: none;
+}
+
+.footer__h2 {
+  font-size: 1rem;
+  color: #2d190d;
+  letter-spacing: 0.6rem;
+
+  text-transform: uppercase;
+}
+.footer__ul > li {
+  padding-top: 1rem;
+}
+
+.footer__ul > li > a {
+  text-decoration: none;
+  color: #2d190d;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
