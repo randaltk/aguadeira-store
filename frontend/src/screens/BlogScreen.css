@@ -7,7 +7,6 @@
 }
 
 .blog__h2 {
-  text-align: center;
   margin-bottom: 0.5rem;
 }
 
@@ -15,34 +14,43 @@
   margin-top: 5rem;
 }
 .blog__post1 {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  grid-gap: 0rem;
+
   margin: 0 auto;
-  width: 950px;
-  height: 530px;
+  width: 1050px;
+  height: 400px;
   margin-top: 2rem;
 }
 
 .img__post1 {
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
 }
 
 .p__post1 {
+  width: 650px;
+  margin-left: 2rem;
   margin-bottom: 1rem;
-  line-height: 1.55rem;
+  line-height: 1.75rem;
 }
-
-#h1__post2 {
-  margin-top: 6rem;
-}
-
 .readMoreGrid {
-  margin: -4.5rem auto;
+  margin: 1rem auto;
+  width: 81%;
+}
+.extraContent1 {
+  margin: 0 auto;
+  margin-left: 2rem;
+  line-height: 1.75rem;
+}
 
-  width: 59rem;
+#post2 {
+  margin-top: 5rem;
+}
+
+#p2 {
+  margin-right: 2rem;
 }
 
 #insta__h1 {

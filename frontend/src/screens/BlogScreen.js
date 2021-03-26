@@ -10,10 +10,11 @@ import instaPost1 from "../assets/images/AguadeiraLogo.png";
 import instaPost2 from "../assets/images/sabonete-solar.jpg";
 import instaPost3 from "../assets/images/sabonete-lavanda.jpg";
 const BlogScreen = () => {
-  const [readMore, setReadMore] = useState(false);
+  const [readMore1, setReadMore1] = useState(false);
+  const [readMore2, setReadMore2] = useState(false);
 
   const extraContent1 = (
-    <p className="p__post1">
+    <p className="extraContent1">
       de outros cosméticos condicionantes, além da maioria dos sabonetes
       industriais possuir ingredientes de origem animal. O pH dos sabonetes da
       Terra Céu Azul é balanceado, entre 8 e 9, produzidos com matérias primas
@@ -28,7 +29,7 @@ const BlogScreen = () => {
   );
 
   const extraContent2 = (
-    <p className="p__post1">
+    <p className="extraContent1">
       Uma vez captado pelo olfato, o aroma viaja até o cérebro (mais rápido do
       que os estímulos da visão ou da audição). O olfato nos conecta diretamente
       a estados emocionais e comportamentais, muitas vezes armazenados desde a
@@ -80,11 +81,11 @@ const BlogScreen = () => {
             são usados para proporcionar mais espuma, transparência, entre
             outras coisas.Estes sabonetes industriais também excluem a glicerina
             de sua composição como sobra do processo de saponificação e vendem
-            para a fabricação{readMore ? "" : "..."}
+            para a fabricação{readMore1 ? "" : "..."}
             <p
               className="p__post1"
               onClick={() => {
-                setReadMore(!readMore);
+                setReadMore1(!readMore1);
               }}
             >
               {" "}
@@ -92,19 +93,18 @@ const BlogScreen = () => {
                 style={{ color: "#553521", opacity: "0.9", cursor: "pointer" }}
               >
                 {" "}
-                {readMore ? "⤴" : "Leia mais"}
+                {readMore1 ? "⤴" : "Leia mais"}
               </p>
             </p>
           </p>
         </div>
         <div className="readMoreGrid">
-          <p className="p__post1">{readMore && extraContent1}</p>
+          <p>{readMore1 && extraContent1}</p>
         </div>
-        <h1 className="blog__h1" id="h1__post2">
-          Os óleos essenciais e as emoções
-        </h1>
+        {/*                                                                      POST  2                                           */}
         <div className="blog__post1" id="post2">
-          <p className="p__post1">
+          <p className="p__post1" id="p2">
+            <h3 className="blog__h2"> Os óleos essenciais e as emoções</h3>
             Os aromas têm um potencial de impacto emocional que pode alcançar
             nossa psique, relaxando a mente e tocando o espírito. Os Óleos
             Essenciais, com sua energia aromática concentrada, influenciam
@@ -120,11 +120,11 @@ const BlogScreen = () => {
             dependiam disso, e o que eles cheiravam causavam sentimentos
             proporcionais de medo, de fome e atração sexual. . . 👃🏼 Estima-se
             que nosso olfato seja até dez mil vezes mais preciso do que os
-            demais sentidos{readMore ? "" : "..."}
+            demais sentidos{readMore2 ? "" : "..."}
             <p
               className="p__post1"
               onClick={() => {
-                setReadMore(!readMore);
+                setReadMore2(!readMore2);
               }}
             >
               {" "}
@@ -132,16 +132,22 @@ const BlogScreen = () => {
                 style={{ color: "#553521", opacity: "0.9", cursor: "pointer" }}
               >
                 {" "}
-                {readMore ? "⤴" : "Leia mais"}
+                {readMore2 ? "⤴" : "Leia mais"}
               </p>
             </p>
           </p>
+          <img
+            className="img__post1"
+            src={CestaSabonetes}
+            alt="cesta-sabonetes"
+          />
+        </div>
+        <div className="readMoreGrid">
+          <p>{readMore2 && extraContent2}</p>
+        </div>
 
-          <img className="img__post1" src={Laranjas} alt="cesta-sabonetes" />
-        </div>
-        <div className="readMoreGrid" id="readMore2">
-          <p className="p__post1">{readMore && extraContent2}</p>
-        </div>
+        {/*                                                                      INSTAGRAM                                            */}
+
         <h1 className="blog__h1" id="insta__h1">
           @aguadeira.atelier
         </h1>
