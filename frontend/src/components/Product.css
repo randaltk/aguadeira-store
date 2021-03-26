@@ -37,6 +37,7 @@
 }
 
 .info__name {
+  margin-top: 0.5rem;
   font-size: 1rem;
   overflow: hidden;
   color: #2d190d;

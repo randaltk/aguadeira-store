@@ -1,6 +1,6 @@
 .footer__wrapper {
   margin: 1rem auto;
-  width: 800px;
+  width: 850px;
   height: 150px;
 }
 .footer__nav {
@@ -14,7 +14,7 @@
 }
 .footer__ul {
   flex-direction: column;
-  padding: 3rem;
+  padding: 3.5rem;
 
   list-style: none;
 }
