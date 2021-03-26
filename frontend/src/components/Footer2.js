@@ -1,6 +1,6 @@
 import "./Footer2.css";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
+
 const Footer2 = () => {
   return (
     <>
@@ -103,7 +103,6 @@ const Footer2 = () => {
           </ul>
         </nav>
       </div>
-      <Footer />
     </>
   );
 };

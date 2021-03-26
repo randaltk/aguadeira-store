@@ -2,6 +2,7 @@ import Footer2 from "../components/Footer2";
 import Maozinha from "../assets/images/maozinha.png";
 import Matinho from "../assets/images/matinho.png";
 import "./AboutScreen.css";
+import Footer from "../components/Footer";
 // import Mandala from "../assets/images/About/mandala.PNG";
 // import Coelho from "../assets/images/About/coelin.PNG";
 // import Folhas from "../assets/images/About/folhas.PNG";
@@ -46,8 +47,9 @@ const AboutScreen = () => {
           </p>
           <img className="maozinha__img" alt="maozinha" src={Maozinha}></img>
         </div>
+        <Footer2 />
+        <Footer />
       </div>
-      <Footer2 />
     </>
   );
 };

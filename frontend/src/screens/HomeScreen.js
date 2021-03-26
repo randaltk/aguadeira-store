@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 // Components
 import Product from "../components/Product";
 import Footer from "../components/Footer";
+import Footer2 from "../components/Footer2";
 
 //Actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
@@ -40,7 +41,7 @@ const HomeScreen = () => {
           ))
         )}
       </div>
-
+      <Footer2 />
       <Footer />
     </div>
   );
