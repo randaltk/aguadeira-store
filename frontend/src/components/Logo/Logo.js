@@ -1,7 +1,7 @@
 import "./Logo.css";
 import { Link } from "react-router-dom";
 
-import imageLogo from "../assets/images/logomarrom.png";
+import imageLogo from "../../assets/images/logomarrom.png";
 const Logo = () => {
   return (
     <>

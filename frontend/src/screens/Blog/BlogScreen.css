@@ -2,10 +2,18 @@
   margin: 0 auto;
 }
 .blog__h1 {
+  letter-spacing: 0.5rem;
   text-align: center;
   color: #2d190d;
+  text-transform: uppercase;
 }
 
+.pages__line {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  border-top: 0.1rem solid #2d190d;
+}
 .blog__h2 {
   margin-bottom: 0.5rem;
 }

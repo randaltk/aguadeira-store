@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Logo from "../components/Logo";
+import Logo from "../Logo/Logo";
 const Navbar = ({ click }) => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
@@ -17,21 +17,25 @@ const Navbar = ({ click }) => {
         <nav className="navbar">
           <ul className="navbar__links">
             <li>
-              <Link to="/">Loja</Link>
+              <Link to="/">Início</Link>
             </li>
-            <li> ✧ </li>
+            <li> • </li>
+            <li>
+              <Link to="/store">Loja</Link>
+            </li>
+            <li> • </li>
             <li>
               <Link to="/about">Sobre</Link>
             </li>
-            <li> ✧ </li>
+            <li> • </li>
             <li>
               <Link to="/blog">Blog</Link>
             </li>
-            <li> ✧ </li>
+            <li> • </li>
             <li>
               <Link to="/contact">Contato</Link>
             </li>
-            <li> ✧ </li>
+            <li> • </li>
             <li>
               <Link to="/cart" className="cart__link">
                 <i className="fas fa-shopping-cart"></i>

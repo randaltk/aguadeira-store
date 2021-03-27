@@ -1,14 +1,14 @@
-import "./HomeScreen.css";
+import "./StoreScreen.css";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 // Components
-import Product from "../components/Product";
-import Footer from "../components/Footer";
-import Footer2 from "../components/Footer2";
+import Product from "../../components/Product/Product";
+import Footer from "../../components/Footer/Footer";
+import Footer2 from "../../components/Footer2/Footer2";
 
 //Actions
-import { getProducts as listProducts } from "../redux/actions/productActions";
+import { getProducts as listProducts } from "../../redux/actions/productActions";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();

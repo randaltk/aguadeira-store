@@ -21,13 +21,18 @@
 
 .navbar__links > li > a {
   text-transform: uppercase;
-  font-style: italic;
   text-decoration: none;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.2rem;
   color: #2d190d;
   font-size: 1rem;
   display: flex;
   align-items: center;
+  font-family: Oldstyle;
+}
+@font-face {
+  font-family: "Oldstyle";
+  src: url("../../assets/fonts/Oldstyle/OLDSH___.TTF");
+  font: "Oldstyle";
 }
 
 .navbar__links > li > a:hover {

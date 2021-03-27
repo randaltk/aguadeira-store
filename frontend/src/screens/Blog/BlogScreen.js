@@ -1,14 +1,16 @@
 import { useState } from "react";
 
 import "./BlogScreen.css";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer/Footer";
 
-import CestaSabonetes from "../assets/images/teste.jpg";
-import Laranjas from "../assets/images/oranges.jpg";
+import CestaSabonetes from "../../assets/images/teste.jpg";
 
-import instaPost1 from "../assets/images/AguadeiraLogo.png";
-import instaPost2 from "../assets/images/sabonete-solar.jpg";
-import instaPost3 from "../assets/images/sabonete-lavanda.jpg";
+import Planta from "../../assets/images/planta.jpg";
+
+import instaPost1 from "../../assets/images/AguadeiraLogo.png";
+import instaPost2 from "../../assets/images/sabonete-solar.jpg";
+import instaPost3 from "../../assets/images/sabonete-lavanda.jpg";
+import Footer2 from "../../components/Footer2/Footer2";
 const BlogScreen = () => {
   const [readMore1, setReadMore1] = useState(false);
   const [readMore2, setReadMore2] = useState(false);
@@ -52,6 +54,7 @@ const BlogScreen = () => {
     <>
       <div className="blog__wrapper">
         <h1 className="blog__h1"> Bem vindes ao blog ! </h1>
+        <p className="pages__line"></p>
 
         <div className="blog__post1">
           <img
@@ -136,11 +139,7 @@ const BlogScreen = () => {
               </p>
             </p>
           </p>
-          <img
-            className="img__post1"
-            src={CestaSabonetes}
-            alt="cesta-sabonetes"
-          />
+          <img className="img__post1" src={Planta} alt="cesta-sabonetes" />
         </div>
         <div className="readMoreGrid">
           <p>{readMore2 && extraContent2}</p>
@@ -160,7 +159,7 @@ const BlogScreen = () => {
           <img className="img__insta" src={instaPost1} alt="instaPost3" />
         </div>
       </div>
-
+      <Footer2 />
       <Footer />
     </>
   );

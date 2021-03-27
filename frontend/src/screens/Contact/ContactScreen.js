@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactScreen.css";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer/Footer";
 export default class ContactScreen extends React.Component {
   constructor(props) {
     super(props);

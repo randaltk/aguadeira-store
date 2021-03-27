@@ -3,17 +3,18 @@ import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-import Navbar from "./components/Navbar";
-import SideDrawer from "./components/SideDrawer";
-import Backdrop from "./components/Backdrop";
+import Navbar from "./components/Navbar/Navbar";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Backdrop from "./components/Backdrop/Backdrop";
 
 // Screens
-import HomeScreen from "./screens/HomeScreen";
-import AboutScreen from "./screens/AboutScreen";
-import BlogScreen from "./screens/BlogScreen";
-import ContactScreen from "./screens/ContactScreen";
-import ProductScreen from "./screens/ProductScreen";
-import CartScreen from "./screens/CartScreen";
+import HomeScreen from "./screens/Home/HomeScreen";
+import StoreScreen from "./screens/Store/StoreScreen";
+import AboutScreen from "./screens/About/AboutScreen";
+import BlogScreen from "./screens/Blog/BlogScreen";
+import ContactScreen from "./screens/Contact/ContactScreen";
+import ProductScreen from "./screens/Product/ProductScreen";
+import CartScreen from "./screens/Cart/CartScreen";
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
@@ -26,6 +27,7 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={HomeScreen} />
+        <Route exact path="/store" component={StoreScreen} />
         <Route exact path="/about" component={AboutScreen} />
         <Route exact path="/blog" component={BlogScreen} />
         <Route exact path="/contact" component={ContactScreen} />
