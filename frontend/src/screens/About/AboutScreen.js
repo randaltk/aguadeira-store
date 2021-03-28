@@ -45,11 +45,16 @@ const AboutScreen = () => {
           <img className="maozinha__img" alt="maozinha" src={Maozinha}></img>
         </div>
 
-        <h1 className="matinho__h1">
+        <h1 className="matinho__h1" id="coelhoh1">
           Sem ingredientes de origem animal & Sem testes em animais
         </h1>
         <div className="matinho__wrapper">
-          <img className="matinho__img" alt="matinho" src={Coelho}></img>
+          <img
+            className="matinho__img"
+            id="coelhoImg"
+            alt="matinho"
+            src={Coelho}
+          ></img>
           <p className="matinho__desc">
             Animais têm direitos. Merecem liberdade, respeito e, sempre que
             possível, muito carinho! Os cosméticos naturais da Aguadeira não são
@@ -58,7 +63,7 @@ const AboutScreen = () => {
           </p>
         </div>
 
-        <h1 className="maozinha__h1">Biodegradável Reciclável Reutilizável </h1>
+        <h1 className="matinho__h1">Biodegradável Reciclável Reutilizável </h1>
         <div className="maozinha__wrapper">
           <p className="maozinha__desc">
             Os cosméticos naturais da aguadeira possuem o poder das plantas e
@@ -71,9 +76,16 @@ const AboutScreen = () => {
           <img className="maozinha__img" alt="maozinha" src={Folhas}></img>
         </div>
 
-        <h1 className="matinho__h1">Terapêutico</h1>
+        <h1 className="matinho__h1" id="terapeuticoh1">
+          Terapêutico
+        </h1>
         <div className="matinho__wrapper">
-          <img className="matinho__img" alt="matinho" src={Mandala}></img>
+          <img
+            className="matinho__img"
+            alt="matinho"
+            id="terapeuticoImg"
+            src={Mandala}
+          ></img>
           <p className="matinho__desc">
             Os cosméticos naturais da Aguadeira têm feitios regados de amor e de
             boas intenções. Seus ingredientes são combinados visando criar
@@ -81,6 +93,14 @@ const AboutScreen = () => {
             da nossa mente e das nossas emoções.
           </p>
         </div>
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
         <Footer2 />
         <Footer />
       </div>

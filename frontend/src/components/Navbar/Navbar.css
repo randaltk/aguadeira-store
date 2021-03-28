@@ -22,7 +22,7 @@
 .navbar__links > li > a {
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.12rem;
   color: #2d190d;
   font-size: 1rem;
   display: flex;
@@ -31,7 +31,9 @@
 }
 @font-face {
   font-family: "Oldstyle";
-  src: url("../../assets/fonts/Oldstyle/OLDSH___.TTF");
+  /* src: url("../../assets/fonts/Oldstyle/OLDSH___.TTF"); */
+  src: url("../../assets/fonts/Oldstyle/OLDSSCH_.TTF");
+
   font: "Oldstyle";
 }
 

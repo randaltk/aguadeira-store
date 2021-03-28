@@ -2,9 +2,10 @@
   margin: 0 auto;
 }
 .blog__h1 {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   text-align: center;
   color: #2d190d;
+ 
   text-transform: uppercase;
 }
 
