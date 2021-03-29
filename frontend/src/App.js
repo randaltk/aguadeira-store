@@ -15,6 +15,8 @@ import BlogScreen from "./screens/Blog/BlogScreen";
 import ContactScreen from "./screens/Contact/ContactScreen";
 import ProductScreen from "./screens/Product/ProductScreen";
 import CartScreen from "./screens/Cart/CartScreen";
+import EnvioRetornoScreen from "./screens/EnvioRetorno/EnvioRetornoScreen";
+import PoliticaDaLojaScreen from "./screens/PoliticaDaLoja/PoliticaDaLojaScreen";
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
@@ -34,6 +36,13 @@ function App() {
 
         <Route exact path="/product/:id" component={ProductScreen} />
         <Route exact path="/cart" component={CartScreen} />
+
+        <Route exact path="/envios-e-retornos" component={EnvioRetornoScreen} />
+        <Route
+          exact
+          path="/politica-da-loja"
+          component={PoliticaDaLojaScreen}
+        />
       </Switch>
     </Router>
   );

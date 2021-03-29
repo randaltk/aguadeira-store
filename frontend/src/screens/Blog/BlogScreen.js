@@ -7,10 +7,8 @@ import CestaSabonetes from "../../assets/images/teste.jpg";
 
 import Planta from "../../assets/images/planta.jpg";
 
-import instaPost1 from "../../assets/images/AguadeiraLogo.png";
-import instaPost2 from "../../assets/images/sabonete-solar.jpg";
-import instaPost3 from "../../assets/images/sabonete-lavanda.jpg";
 import Footer2 from "../../components/Footer2/Footer2";
+import Instagram from "../../components/Instagram/Instagram";
 const BlogScreen = () => {
   const [readMore1, setReadMore1] = useState(false);
   const [readMore2, setReadMore2] = useState(false);
@@ -145,19 +143,7 @@ const BlogScreen = () => {
           <p>{readMore2 && extraContent2}</p>
         </div>
 
-        {/*                                                                      INSTAGRAM                                            */}
-
-        <h1 className="blog__h1" id="insta__h1">
-          @aguadeira.atelier
-        </h1>
-
-        <div className="instagram__wrapper">
-          <img className="img__insta" src={instaPost3} alt="instaPost3" />
-
-          <img className="img__insta" src={instaPost2} alt="instaPost2" />
-
-          <img className="img__insta" src={instaPost1} alt="instaPost3" />
-        </div>
+        <Instagram />
       </div>
       <Footer2 />
       <Footer />

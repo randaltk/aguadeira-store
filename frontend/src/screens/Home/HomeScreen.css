@@ -1,0 +1,37 @@
+.capa__wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.destaquesh1 {
+  font-family: Oldstyle;
+  font-size: 1.6rem;
+  color: #2d190d;
+  letter-spacing: 0.5rem;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+#post2h2 {
+  margin-top: 6rem;
+}
+
+#lancamentosimg {
+  margin-left: 3rem;
+}
+
+#depoimentodesc {
+  font-size: 0.95rem;
+  width: 40%;
+  margin-left: 8rem;
+}
+.destaques__wrapper {
+  margin-top: 3rem;
+
+  text-align: center;
+}
+
+.destaques__img {
+  width: 32%;
+}

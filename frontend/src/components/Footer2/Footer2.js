@@ -34,15 +34,15 @@ const Footer2 = () => {
             <div className="line"></div>
             <h2 className="footer__h2">Ajuda</h2>
             <li>
-              <Link to="/">Envio e Retornos</Link>
+              <Link to="/envios-e-retornos">Envio e Retornos</Link>
             </li>
 
             <li>
-              <Link to="/about">Política da Loja</Link>
+              <Link to="/politica-da-loja">Política da Loja</Link>
             </li>
 
             <li>
-              <Link to="/blog">Métodos de pagamento</Link>
+              <Link to="/politica-da-loja">Métodos de pagamento</Link>
             </li>
 
             <li>
