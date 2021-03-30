@@ -1,16 +1,15 @@
 .homescreen {
   margin: 0 auto;
-  position: relative;
 }
 
 .homescreen__products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto;
- 
-  width: 950px;
+  margin: 3rem auto;
+  grid-gap: 2rem;
+  width: 980px;
 
-  height: auto;
+  height: 980px;
 }
 
 @media (max-width: 1232px) {

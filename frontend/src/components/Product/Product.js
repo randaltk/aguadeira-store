@@ -8,10 +8,11 @@ const Product = ({ imageUrl, description, price, name, productId }) => {
         <div className="img__wrapper">
           <img src={imageUrl} alt={name} />
         </div>
-        <Link to={`/product/${productId}`} className="info__button">
-          Visualizar
-        </Link>
+
         <div className="product__info">
+          <Link to={`/product/${productId}`} className="info__button">
+            Visualizar
+          </Link>
           <p className="info__name">{name}</p>
 
           {/*  <p className="info__description">

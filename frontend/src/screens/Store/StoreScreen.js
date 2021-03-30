@@ -22,10 +22,11 @@ const HomeScreen = () => {
 
   return (
     <div className="homescreen">
-      {/* <h2 className="homescreen__title">Loja</h2> */}
+      <h1 className="destaquesh1">Loja</h1>
+      <p className="pages__line"></p>
       <div className="homescreen__products">
         {loading ? (
-          <h2>Loading...</h2>
+          <h2>{""}</h2>
         ) : error ? (
           <h2>{error}</h2>
         ) : (

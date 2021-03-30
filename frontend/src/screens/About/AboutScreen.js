@@ -15,7 +15,7 @@ const AboutScreen = () => {
   return (
     <>
       <div className="about__wrapper">
-        <h1 className="about__h1">Sobre a Marca</h1>
+        <h1 className="destaquesh1">Sobre a Marca</h1>
         <p className="pages__line"></p>
         <h1 className="matinho__h1">Natural</h1>
         <div className="matinho__wrapper">
@@ -34,7 +34,7 @@ const AboutScreen = () => {
         </div>
         <h1 className="maozinha__h1">Artesanal</h1>
         <div className="maozinha__wrapper">
-          <p className="maozinha__desc">
+          <p className="matinho__desc">
             Os cosméticos naturais da aguadeira possuem o poder das plantas e
             são feitos à mão com amor e dedicação. São alquimias mágicas e
             únicas! Ao comprar de pequenos produtores de cosméticos naturais
@@ -63,7 +63,9 @@ const AboutScreen = () => {
           </p>
         </div>
 
-        <h1 className="matinho__h1">Biodegradável Reciclável Reutilizável </h1>
+        <h1 className="matinho__h1" id="bioh1">
+          Biodegradável Reciclável Reutilizável{" "}
+        </h1>
         <div className="maozinha__wrapper">
           <p className="maozinha__desc">
             Os cosméticos naturais da aguadeira possuem o poder das plantas e

@@ -30,28 +30,17 @@ const BlogScreen = () => {
 
   const extraContent2 = (
     <p className="extraContent1">
-      Uma vez captado pelo olfato, o aroma viaja até o cérebro (mais rápido do
-      que os estímulos da visão ou da audição). O olfato nos conecta diretamente
-      a estados emocionais e comportamentais, muitas vezes armazenados desde a
-      infância. É o único dos cinco sentidos físicos que conecta-se diretamente
-      ao sistema límbico, muitas vezes referido como nosso centro de controle
-      emocional – é através desse sistema cerebral que emoções como ansiedade,
-      depressão, medo, raiva e alegria se manifestam fisicamente. . Além das
-      emoções, o sistema límbico esta conectado a outras partes do cérebro que
-      controlam atividades tais como, pressão arterial, batimentos cardíacos,
-      respiração, memória, os níveis de estresse e o equilíbrio hormonal. . É
-      importante lembrar que os Óleos Essenciais são luz solar transformada em
-      energia bio-disponível. Sendo assim, por trazerem luz à nossa vida
-      (através das incríveis e delicadas moléculas aromáticas) esses Óleos são
-      nossos aliados de cura bio-espiritual. É o milagre da Luz Perfumada. .
-      ✨🌸 Os óleos essenciais são vivos e dinâmicos: ao invés de substâncias
-      inertes, eles contêm a força de vida ativa da planta. 🌸✨.
+      ❁ Além do uso de óleos essenciais, para interagir com as plantas e seus
+      poderes em busca de harmonia e equilíbrio em nossas vidas, podemos
+      simplesmente no dia a dia ter plantas por perto, cuidar de um jardim,
+      sentir o perfume das ervas, fazer um chá ou acender incensos naturais!
     </p>
   );
   return (
     <>
       <div className="blog__wrapper">
-        <h1 className="blog__h1"> Bem vindes ao blog ! </h1>
+        <h1 className="destaquesh1"> Bem vindes ! </h1>
+
         <p className="pages__line"></p>
 
         <div className="blog__post1">
@@ -105,37 +94,24 @@ const BlogScreen = () => {
         {/*                                                                      POST  2                                           */}
         <div className="blog__post1" id="post2">
           <p className="p__post1" id="p2">
-            <h3 className="blog__h2"> Os óleos essenciais e as emoções</h3>
-            Os aromas têm um potencial de impacto emocional que pode alcançar
-            nossa psique, relaxando a mente e tocando o espírito. Os Óleos
-            Essenciais, com sua energia aromática concentrada, influenciam
-            profundamente nossa mente e nossas emoções, conseguem ter efeitos
-            fisiológicos e psicológicos profundos. Quem já não sentiu um aroma e
-            se lembrou de uma situação passada? “Este cheiro me lembra..” Isso
-            acontece porque quando sentimos o cheiro de um aroma, ativamos uma
-            parte do cérebro, o sistema límbico, que é responsável pelas nossas
-            memórias, emoções, criatividade, intuição e impulsos instintivos. .
-            Um exemplo disso são os nossos antepassados que tinham um senso
-            agudo de cheiro, muito semelhante ao dos cães. Eles sentiam o cheiro
-            de perigo, da comida e de seus companheiros, porque suas vidas
-            dependiam disso, e o que eles cheiravam causavam sentimentos
-            proporcionais de medo, de fome e atração sexual. . . 👃🏼 Estima-se
-            que nosso olfato seja até dez mil vezes mais preciso do que os
-            demais sentidos{readMore2 ? "" : "..."}
-            <p
-              className="p__post1"
-              onClick={() => {
-                setReadMore2(!readMore2);
-              }}
-            >
-              {" "}
-              <p
-                style={{ color: "#553521", opacity: "0.9", cursor: "pointer" }}
-              >
-                {" "}
-                {readMore2 ? "⤴" : "Leia mais"}
-              </p>
-            </p>
+            <h3 className="blog__h2"> ❁ ⊱ A Alma das Plantas ⊰ ❁</h3>❁ Óleos
+            essenciais são os responsáveis pelo perfume, pela proteção e pela
+            reprodução das plantas. Chamados também de “alma das plantas”,
+            trazem a força viva de cada uma delas e não podem ser reproduzidos
+            sinteticamente. Ao absorvê-los em nosso organismo através de nossa
+            inspiração ou através da absorção pela nossa pele, seus princípios
+            ativos irão interagir com nosso corpo, mente e espirito, podendo
+            apresentar efeitos analgésicos, bactericidas, antifúngicos,
+            estimulantes, sedativos, ansiolíticos, antidepressivos e muitos
+            outros. Sabendo disso, é importante que, ao comprar óleos essenciais
+            ou produtos contendo óleos essenciais, você conheça um pouco sobre
+            as propriedades dessas medicinas, sobre suas dosagens, formas de
+            aplicação e que conheça suas próprias necessidades do momento. ❁
+            Além do uso de óleos essenciais, para interagir com as plantas e
+            seus poderes em busca de harmonia e equilíbrio em nossas vidas,
+            podemos simplesmente no dia a dia ter plantas por perto, cuidar de
+            um jardim, sentir o perfume das ervas, fazer um chá ou acender
+            incensos naturais!
           </p>
           <img className="img__post1" src={Planta} alt="cesta-sabonetes" />
         </div>

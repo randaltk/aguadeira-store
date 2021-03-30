@@ -5,12 +5,12 @@
   letter-spacing: 0.2rem;
   text-align: center;
   color: #2d190d;
- 
+
   text-transform: uppercase;
 }
 
 .pages__line {
-  margin: 0 auto;
+  margin: 0.7rem auto;
   width: 50%;
   text-align: center;
   border-top: 0.1rem solid #2d190d;
@@ -61,8 +61,6 @@
 #p2 {
   margin-right: 2rem;
 }
-
-
 
 @media (max-width: 960px) {
   .blog__post1 {

@@ -5,7 +5,7 @@ import "./HomeScreen.css";
 import Instagram from "../../components/Instagram/Instagram";
 import Footer2 from "../../components/Footer2/Footer2";
 import Footer from "../../components/Footer/Footer";
-
+import { Link } from "react-router-dom";
 const HomeScreen = () => {
   return (
     <>
@@ -73,9 +73,12 @@ const HomeScreen = () => {
             />
           </div>
 
-          <h1 className="destaquesh1" id="post2h2">
-            Depoimentos
-          </h1>
+          <Link to="/about" style={{ textDecoration: "none" }}>
+            {" "}
+            <h1 className="destaquesh1" id="post2h2">
+              Conheça a marca
+            </h1>
+          </Link>
 
           <p className="pages__line"></p>
           <br />
@@ -90,12 +93,13 @@ const HomeScreen = () => {
             mulheres, com muita magia e amor.
           </p>
           <div className="blog__post1">
-            <img
-              className="img__post1"
-              src={depoimentos}
-              alt="cesta-sabonetes"
-            />
-
+            <Link to="/about" style={{ textDecoration: "none" }}>
+              <img
+                className="img__post1"
+                src={depoimentos}
+                alt="cesta-sabonetes"
+              />
+            </Link>
             <br />
 
             <p className="maozinha__desc" id="depoimentodesc">
@@ -105,7 +109,6 @@ const HomeScreen = () => {
               você não só está ajudando sonhos a se realizarem, como também
               desestimula grandes empresas a continuarem a produzir cosméticos
               poluentes e prejudiciais à saúde..” <br></br>
-              Vladimir, ex drogado, 16anos
             </p>
           </div>
         </div>

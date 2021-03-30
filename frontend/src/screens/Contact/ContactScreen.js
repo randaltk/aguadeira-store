@@ -15,10 +15,8 @@ export default class ContactScreen extends React.Component {
     return (
       <>
         <div className="contact__wrapper">
-          <h1 className="contact__h1">
-            Estou a disposição para mais informações
-          </h1>
-
+          <h1 className="destaquesh1">Mais informações</h1>
+          <p className="pages__line"></p>
           <div className="contact__grid">
             <div className="contact__descs">
               <p className="contact__p">

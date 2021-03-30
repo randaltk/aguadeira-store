@@ -1,6 +1,6 @@
 import "./Instagram.css";
 import { Link } from "react-router-dom";
-import instaPost1 from "../../assets/images/AguadeiraLogo.png";
+import instaPost1 from "../../assets/images/insta1.jpg";
 import instaPost2 from "../../assets/images/sabonete-solar.jpg";
 import instaPost3 from "../../assets/images/sabonete-lavanda.jpg";
 const Instagram = () => {
