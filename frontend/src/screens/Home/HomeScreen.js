@@ -84,7 +84,7 @@ const HomeScreen = () => {
           <br />
           <br />
 
-          <p>~ thinking about seven generations ahead</p>
+          {/*    <p>~ thinking about seven generations ahead</p>
           <br />
           <p>
             {" "}
@@ -92,6 +92,7 @@ const HomeScreen = () => {
             produtos naturais, artesanais e 100% do processo é feito por
             mulheres, com muita magia e amor.
           </p>
+          */}
           <div className="blog__post1">
             <Link to="/about" style={{ textDecoration: "none" }}>
               <img
@@ -100,6 +101,7 @@ const HomeScreen = () => {
                 alt="cesta-sabonetes"
               />
             </Link>
+
             <br />
 
             <p className="maozinha__desc" id="depoimentodesc">

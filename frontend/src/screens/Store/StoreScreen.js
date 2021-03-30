@@ -23,7 +23,7 @@ const HomeScreen = () => {
   return (
     <div className="homescreen">
       <h1 className="destaquesh1">Loja</h1>
-      <p className="pages__line"></p>
+      <p className="pages__line" id="lessLine"></p>
       <div className="homescreen__products">
         {loading ? (
           <h2>{""}</h2>

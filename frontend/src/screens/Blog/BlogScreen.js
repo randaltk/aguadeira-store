@@ -39,7 +39,7 @@ const BlogScreen = () => {
   return (
     <>
       <div className="blog__wrapper">
-        <h1 className="destaquesh1"> Bem vindes ! </h1>
+        <h1 className="destaquesh1"> Bem vindes ao blog! </h1>
 
         <p className="pages__line"></p>
 
