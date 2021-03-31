@@ -1,8 +1,25 @@
 .capa__wrapper {
   margin: 0 auto;
-  width: 80%;
+}
+.destaques__products {
+  display: flex;
+  margin: 2rem auto;
+
+  width: 1100px;
+  height: 400px;
 }
 
+.destaques__img {
+  overflow: hidden;
+  z-index: 0;
+  padding: 1.5rem;
+}
+
+.destaques__img > img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+}
 .destaquesh1 {
   font-family: Oldstyle;
   font-size: 1.6rem;
@@ -12,7 +29,9 @@
 
   text-transform: uppercase;
 }
-
+.destaques__grid {
+  object-fit: cover;
+}
 #post2h2 {
   margin-top: 6rem;
 }
