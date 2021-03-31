@@ -1,16 +1,18 @@
 .navbar {
   width: 100%;
+  margin-left: 2.25rem;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
   z-index: 50;
-  margin-left: 2rem;
 }
 
 .navbar__links {
   display: flex;
   list-style: none;
+
   align-items: center;
   margin: 0 auto;
 }
@@ -45,7 +47,6 @@
 .navbar__links > li > a > span {
   display: flex;
   align-items: center;
-  margin-left: 8px;
 }
 
 .cart__link {
@@ -59,7 +60,7 @@
   /* background-color: #E0ECE8; */
   /* opacity: 1; */
   /* border-radius: 50%; */
-  margin-left: 8px;
+
   color: #171717;
   display: flex;
   justify-content: center;

@@ -1,44 +1,42 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
 import CestaSabonetes from "../../assets/images/teste.jpg";
 import X from "../../assets/images/sabonete-lavanda.jpg";
 import depoimentos from "../../assets/images/depoimentos.jpg";
+import { Link } from "react-router-dom";
 import "./HomeScreen.css";
+//Components
+import Product from "../../components/Product/Product";
 import Instagram from "../../components/Instagram/Instagram";
 import Footer2 from "../../components/Footer2/Footer2";
 import Footer from "../../components/Footer/Footer";
-import { Link } from "react-router-dom";
+
+//Actions
+import { getProducts as listProducts } from "../../redux/actions/productActions";
+
 const HomeScreen = () => {
+  const dispatch = useDispatch();
+
+  const getProducts = useSelector((state) => state.getProducts);
+  const { products, loading, error } = getProducts;
+
+  useEffect(() => {
+    dispatch(listProducts());
+  }, [dispatch]);
+
   return (
     <>
       <div className="capa__wrapper">
         <h1 className="destaquesh1">Destaques</h1>
         <p className="pages__line"></p>
         <div className="destaques__wrapper">
-          <div className="blog__post1">
-            <img
-              className="img__post1"
-              src={CestaSabonetes}
-              alt="cesta-sabonetes"
-            />
-
-            <p className="p__post1">
-              Todo sabão é feito da mistura de ácidos graxos (gorduras) e álcali
-              (soda cáustica, potassa, ou cinzas), resultando em sais e
-              glicerina. Um sabão artesanal em barra bem feito, de fórmula
-              equilibrada, bons ingredientes e bom para a pele geralmente possui
-              um ph entre 8 e 10. Os sabonetes industrializados, possuem ph
-              próximo de 11, o que poderia se considerar como um dos motivos –
-              mas não o único – dos sabonetes industrializados irritarem a pele,
-              principalmente as sensíveis, os detergentes utilizados nestes
-              sabonetes provocam a perda de água das camadas mais profundas da
-              pele, proporcionando o ressecamento ou desequilíbrio do PH. Os
-              sabonetes industriais possuem vários componentes químicos
-              desnecessários, entre os mais comuns estão o lauril éter sulfato
-              de sódio e o propilenoglicol, ditos prejudiciais para a pele
-              dentro da linha de produtos naturais, são usados para proporcionar
-              mais espuma, transparência, entre outras coisas.Estes sabonetes
-              industriais também excluem a glicerina de sua composição como
-              sobra do processo de saponificação e vendem para a fabricação
-            </p>
+          <div className="blog__post1" id="fit">
+            {products.slice(0, 4).map((product) => (
+              <div className="left__image">
+                <img src={product.imageUrl} alt={product.name} />
+              </div>
+            ))}
           </div>
 
           <h1 className="destaquesh1" id="post2h2">
@@ -46,33 +44,12 @@ const HomeScreen = () => {
           </h1>
           <p className="pages__line"></p>
           <div className="blog__post1">
-            <p className="p__post1">
-              Todo sabão é feito da mistura de ácidos graxos (gorduras) e álcali
-              (soda cáustica, potassa, ou cinzas), resultando em sais e
-              glicerina. Um sabão artesanal em barra bem feito, de fórmula
-              equilibrada, bons ingredientes e bom para a pele geralmente possui
-              um ph entre 8 e 10. Os sabonetes industrializados, possuem ph
-              próximo de 11, o que poderia se considerar como um dos motivos –
-              mas não o único – dos sabonetes industrializados irritarem a pele,
-              principalmente as sensíveis, os detergentes utilizados nestes
-              sabonetes provocam a perda de água das camadas mais profundas da
-              pele, proporcionando o ressecamento ou desequilíbrio do PH. Os
-              sabonetes industriais possuem vários componentes químicos
-              desnecessários, entre os mais comuns estão o lauril éter sulfato
-              de sódio e o propilenoglicol, ditos prejudiciais para a pele
-              dentro da linha de produtos naturais, são usados para proporcionar
-              mais espuma, transparência, entre outras coisas.Estes sabonetes
-              industriais também excluem a glicerina de sua composição como
-              sobra do processo de saponificação e vendem para a fabricação
-            </p>
-            <img
-              className="img__post1"
-              src={X}
-              alt="cesta-sabonetes"
-              id="lancamentosimg"
-            />
+            {products.slice(2, 6).map((product) => (
+              <div className="left__image">
+                <img src={product.imageUrl} alt={product.name} />
+              </div>
+            ))}
           </div>
-
           <Link to="/about" style={{ textDecoration: "none" }}>
             {" "}
             <h1 className="destaquesh1" id="post2h2">

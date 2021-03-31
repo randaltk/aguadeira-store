@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactScreen.css";
 import Footer from "../../components/Footer/Footer";
+import Footer2 from "../../components/Footer2/Footer2";
 export default class ContactScreen extends React.Component {
   constructor(props) {
     super(props);
@@ -15,10 +16,10 @@ export default class ContactScreen extends React.Component {
     return (
       <>
         <div className="contact__wrapper">
-          <h1 className="destaquesh1">
+          <h1 className="contact__h1">
             Estou disponivel para mais informações
           </h1>
-          <p className="pages__line"></p>
+
           <div className="contact__grid">
             <div className="contact__descs">
               <p className="contact__p">
@@ -74,7 +75,6 @@ export default class ContactScreen extends React.Component {
             </form>
           </div>
         </div>
-        <Footer />
       </>
     );
   }

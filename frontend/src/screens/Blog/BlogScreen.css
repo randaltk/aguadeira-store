@@ -26,10 +26,9 @@
   display: flex;
   grid-gap: 0rem;
 
-  margin: 0 auto;
+  margin: 5rem auto;
   width: 1050px;
   height: 400px;
-  margin-top: 2rem;
 }
 
 .img__post1 {
