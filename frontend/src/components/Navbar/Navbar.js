@@ -16,6 +16,7 @@ const Navbar = ({ click }) => {
         <Logo />
         <nav className="navbar">
           <ul className="navbar__links">
+        
             <li>
               <Link to="/">Início</Link>
             </li>

@@ -1,4 +1,3 @@
-import "./App.css";
 import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -29,20 +28,16 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={HomeScreen} />
-        <Route exact path="/store" component={StoreScreen} />
-        <Route exact path="/about" component={AboutScreen} />
-        <Route exact path="/blog" component={BlogScreen} />
-        <Route exact path="/contact" component={ContactScreen} />
+        <Route path="/store" component={StoreScreen} />
+        <Route path="/about" component={AboutScreen} />
+        <Route path="/blog" component={BlogScreen} />
+        <Route path="/contact" component={ContactScreen} />
 
-        <Route exact path="/product/:id" component={ProductScreen} />
-        <Route exact path="/cart" component={CartScreen} />
+        <Route path="/product/:id" component={ProductScreen} />
+        <Route path="/cart" component={CartScreen} />
 
-        <Route exact path="/envios-e-retornos" component={EnvioRetornoScreen} />
-        <Route
-          exact
-          path="/politica-da-loja"
-          component={PoliticaDaLojaScreen}
-        />
+        <Route path="/envios-e-retornos" component={EnvioRetornoScreen} />
+        <Route path="/politica-da-loja" component={PoliticaDaLojaScreen} />
       </Switch>
     </Router>
   );

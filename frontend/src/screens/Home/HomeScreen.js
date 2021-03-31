@@ -1,13 +1,11 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import CestaSabonetes from "../../assets/images/teste.jpg";
-import X from "../../assets/images/sabonete-lavanda.jpg";
+
 import depoimentos from "../../assets/images/depoimentos.jpg";
 import { Link } from "react-router-dom";
 import "./HomeScreen.css";
 //Components
-import Product from "../../components/Product/Product";
 import Instagram from "../../components/Instagram/Instagram";
 import Footer2 from "../../components/Footer2/Footer2";
 import Footer from "../../components/Footer/Footer";

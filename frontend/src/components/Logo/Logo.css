@@ -1,7 +1,6 @@
-
 .logo__wrapper {
   margin: 0 auto;
-  display: flex;  
+  display: flex;
   width: 400px;
   cursor: pointer;
 }
@@ -12,7 +11,6 @@
   display: flex;
 }
 
-
 /* @media (max-width: 960px) {
     .navbar__links {
       display: none;
@@ -22,18 +20,12 @@
       display: flex;
     }
   } */
-  
-  @media (max-width: 500px) {
 
-    .logo__wrapper{
-
-      width: 200px;
-
-    }
-    .logo {
-        
-      width: 15rem;
-      
-    }
+@media (max-width: 500px) {
+  .logo__wrapper {
+    width: 200px;
   }
-  
+  .logo {
+    width: 15rem;
+  }
+}
